@@ -1,0 +1,34 @@
+<br>
+<br>
+<div class="container">
+    <div class="col-md-12">
+        <form>
+            <div class="form-group">
+                <label>Tên sản phẩm</label>
+                <input type="text" [(ngModel)]="product.name" name="pName" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Tên danh mục sản phẩm</label>
+                <input type="text" [(ngModel)]="product.category_name" name="cate-name" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Giá mặc định</label>
+                <input type="text" [(ngModel)]="product.old_price" name="old-rice" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Giá bán</label>
+                <input type="text" [(ngModel)]="product.new_price" name="new-rice" class="form-control">
+            </div>
+
+
+            <div class="form-group">
+                <label>Mô tả sản phẩm</label>
+                <textarea type="text" [(ngModel)]="product.desc" name="Desc" class="form-control">
+                </textarea>
+            </div>
+            <button class="btn btn-primary" (click)="addProduct()">Add</button>
+        </form>
+    </div>
+</div>
+<app-footer></app-footer>

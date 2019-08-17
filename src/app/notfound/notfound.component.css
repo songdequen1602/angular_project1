@@ -1,0 +1,24 @@
+.page-not-found {
+  padding: 3rem 0 0 0; }
+  .page-not-found .float-lg-right {
+    float: right; }
+    .page-not-found .message-box {
+      padding-top: 13rem; }
+      .page-not-found .message-box .message-title {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+        }
+        .page-not-found .message-box .go-home-page {
+          width: 230px;
+          height: 50px;
+          text-align: center;
+          line-height: 50px;
+          display: inline-block;
+          color: #fff;
+          background-color: #444;
+          font-weight: 700; }
+          .page-not-found .message-box .go-home-page:hover {
+            background-color: #beae59; }
+            .page-not-found .message-box .go-home-page i {
+              margin-right: 5px;
+              font-size: 18px; }

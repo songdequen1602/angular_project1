@@ -1,0 +1,687 @@
+@font-face { font-family: 'Arsenal-Bold'; src: url("../fonts/Arsenal-Bold.ttf") format("truetype"); font-weight: bold; }
+
+@font-face { font-family: 'Roboto'; src: url("../fonts/Roboto-Bold.ttf") format("truetype"); font-weight: bold; }
+
+@font-face { font-family: 'Arsenal-Italic'; src: url("../fonts/Arsenal-Italic.ttf") format("truetype"); font-style: italic; }
+
+@font-face { font-family: 'Arsenal-Regular'; src: url("../fonts/Arsenal-Regular.ttf") format("truetype"); }
+
+@font-face { font-family: 'Chonburi-Regular'; src: url("../fonts/Chonburi-Regular.ttf") format("truetype"); }
+
+.hv-scale { display: block; overflow: hidden; }
+
+.hv-scale img { transition: all 0.3s ease-in-out; }
+
+.hv-scale:hover img { transform: scale(1.1); }
+
+.c-img { display: block; position: relative; padding-top: 100%; }
+
+.c-img img, .c-img .bg { position: absolute; top: 0; right: 0; bottom: 0; left: 0; display: block; width: 100%; height: 100%; border-radius: inherit; }
+
+.img-responsive { width: 100%; height: auto; display: block; }
+
+.container-fluid0 { padding-left: 0; padding-right: 0; }
+
+.row125 { margin-left: -12.5px; margin-right: -12.5px; }
+
+.row75 { margin-left: -7.5px; margin-right: -7.5px; }
+
+.row0 { margin-left: 0; margin-right: 0; }
+
+.col125 { padding-left: 12.5px; padding-right: 12.5px; }
+
+.col75 { padding-left: 7.5px; padding-right: 7.5px; }
+
+.col0 { padding-left: 0; padding-right: 0; }
+
+.title { text-align: center; font-size: 25px; color: #0097a8; margin-bottom: 30px; font-family: 'Arsenal-Bold'; }
+
+.back-to-top { width: 40px; height: 40px; background: #0097a8; text-align: center; position: fixed; right: 15px; color: #fff; opacity: .7; z-index: 999; bottom: 10px; cursor: pointer; font-size: 30px; line-height: 40px; }
+
+.back-to-top:hover { color: #2a2d2c; }
+
+.mar-bot0 { margin-bottom: 0 !important; }
+
+.mar-bot10 { margin-bottom: 10px; }
+
+.mar-bot15 { margin-bottom: 15px; }
+
+.mar-bot20 { margin-bottom: 20px; }
+
+.mar-bot25 { margin-bottom: 25px; }
+
+.mar-bot30 { margin-bottom: 25px; }
+
+.shop { margin-bottom: 30px;}
+
+.shop .c-img { display: block; margin-bottom: 10px; height: 295px; padding-top: 0; }
+
+.shop .ct { line-height: 1.2em; }
+
+.shop .ct h4 { font-size: 15px; color: #2a2d2c; font-family: 'Arsenal-Bold'; margin-bottom: 3px; }
+
+.shop .ct h4 a { max-width: 100%; overflow: hidden; display: inline-block; height: 20px; }
+
+.shop .ct h4 a:hover { color: #0097a8; }
+
+.shop .ct a:hover { color: #0097a8; }
+
+.shop .ct p { font-family: "Arsenal-Regular"; }
+
+.shop .ct p span { margin-left: 10px; color: #ba2d2c; }
+
+header { color: #000000; background-color: #fff; font-family: "Arsenal-Regular"; font-size: 17.55px; }
+
+header.fixed { position: fixed; top: 0; left: 0; right: 0; z-index: 999; border-bottom: 1px solid #0097a8; }
+
+header.fixed .mb-search .search { margin-bottom: 3px; }
+
+header.fixed .mb-search .cart { padding: 12px 8px 11px 8px; }
+
+header.fixed .mb-search .cart img { margin-top: 0; margin-left: 0; }
+
+header .nav-bar { margin-top: 20px; }
+
+header .nav-bar > ul > li { position: relative; display: inline-block; margin-right: 25px; }
+
+header .nav-bar > ul > li:hover > a { color: #0097a8; }
+
+header .nav-bar > ul > li:hover ul { display: block; }
+
+header .nav-bar > ul > li i { position: absolute; cursor: pointer; right: -14px; top: 6px; }
+
+header .nav-bar > ul > li > a { font-size: 18px; color: #000000; }
+
+header .nav-bar > ul > li ul { display: none; position: absolute; z-index: 99; top: 17px; padding-top: 10px; left: 0; min-width: 230px; }
+
+header .nav-bar > ul > li ul li { border-bottom: 1px solid #68cace; }
+
+header .nav-bar > ul > li ul li:last-child { border-bottom: none; }
+
+header .nav-bar > ul > li ul li:hover a { background-color: #13bebe; }
+
+header .nav-bar > ul > li ul li a { padding: 11px 16px; background-color: #0097a8; color: #fff; font-family: "Arsenal-Regular"; font-size: 18px; display: block; }
+
+header .mb-search { text-align: right; }
+
+header .mb-search > a { font-size: 18px; color: #000000; }
+
+header .mb-search .search { display: inline-block; vertical-align: bottom; margin-bottom: 16px; }
+
+header .mb-search .search > a:hover { color: #0097a8; }
+
+header .mb-search .search .button-hide { font-size: 25px; background: transparent; margin-left: 10px; }
+
+header .mb-search .search form { display: none; transition: all 0.5s ease-in-out; }
+
+header .mb-search .search form input { width: 200px; border: 1px solid #2a2b2c; height: 27px; margin-left: 20px; display: inline-block; border: 1px solid; transition: all 0.5s ease-in-out; }
+
+header .mb-search .search button { outline: none; cursor: pointer; background-color: transparent; }
+
+header .mb-search .search button:focus { outline: none; }
+
+header .mb-search .search button i { font-size: 25px; background: transparent; }
+
+header .cart { background-color: #0097a8; display: inline-block; padding: 37px 8px 20px 8px; margin-left: 30px; }
+
+header .cart img { float: left; }
+
+header .cart span { display: inline-block; width: 22px; height: 22px; background-color: #fff; text-align: center; color: #0097a8; border-radius: 50%; margin-left: 3px; line-height: 22px; /* font-size: 25px; */ font-weight: bold; }
+
+.menu-btn { display: none; }
+
+.main-nav { display: none; }
+
+.main-nav.active { display: block !important; }
+
+.main-nav > ul li { display: block; border-top: 1px solid #b0eff3; position: relative; }
+
+.main-nav > ul li i { position: absolute; right: 0; background-color: #fff; width: 40px; height: 51px; text-align: center; font-size: 30px; cursor: pointer; line-height: 50px; }
+
+.main-nav > ul li i:before { color: #0097a8; }
+
+.main-nav > ul li a { background-color: #0097a8; padding: 13px 15px; display: block; color: #fff; }
+
+.main-nav > ul li a:hover { background-color: #16afc0; }
+
+.main-nav > ul li ul { display: none; position: static; }
+
+.main-nav > ul li ul li a { padding: 13px 30px; background-color: #37b0b5; }
+
+.relative .slick-slider { position: relative; margin-bottom: 0 !important; }
+
+.relative .slick-slider .slick-dots { bottom: 19%; left: 13%; text-align: justify; width: 100px; height: 40px; z-index: 4; }
+
+.relative .slick-slider .slick-dots li.slick-active button:before { opacity: 1; background: #fff; }
+
+.relative .slick-slider .slick-dots li button:before { border: solid 1px #fff; opacity: 1; font-size: 0px; top: -1; left: -1; border-radius: 50%; color: transparent; width: 10px; height: 10px; }
+
+.relative { position: relative; }
+
+.relative .my-slick .my-slide-post { position: relative; }
+
+.relative .my-slick .my-slide-post:before { content: ''; position: absolute; top: 0; bottom: 0; width: 50%; background: linear-gradient(90deg, rgba(0, 151, 168, 0.521569), rgba(255, 255, 255, 0)); z-index: 1; }
+
+.relative .my-slick .my-slide-post img { min-height: 250px; }
+
+.relative .my-slick .my-slide-post .slide-desc { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; /* justify-content: center; */ align-items: center; }
+
+.relative .my-slick .my-slide-post .slide-desc .container { z-index: 99; }
+
+.relative .my-slick .my-slide-post .slide-desc .container .slide-desc-v2 { max-width: 370px; }
+
+.relative .my-slick .my-slide-post .slide-desc .container h2 { font-size: 44px; color: #fff; line-height: 1.1; margin-bottom: 20px; font-family: "Chonburi-Regular"; font-weight: normal; }
+
+.relative .my-slick .my-slide-post .slide-desc .container a { color: #fff; }
+
+.relative .my-slick .my-slide-post .slide-desc .container a:hover { color: #f9ff03; }
+
+.relative .search-form { position: absolute; display: flex; justify-content: center; align-items: center; height: 22%; width: 100%; height: 22%; left: 0; bottom: 30px; z-index: 2; }
+
+.relative .search-form form { display: inline-block; position: relative; width: 50%; }
+
+.relative .search-form form input { width: 100%; /* padding: 26px 0px 26px 30px; */ color: #2a2d2c; height: 75px; font-size: 16px; background-color: #fff; opacity: .9; }
+
+.relative .search-form form button { position: absolute; right: 40px; right: 4%; top: 11%; cursor: pointer; outline: none; background-color: transparent; font-size: 40px; }
+
+.relative .search-form form button i { background-color: transparent; }
+
+.h-desc { margin-bottom: 40px; }
+
+.h-desc .col0 { height: 610px; }
+
+.h-desc .col0:last-child { background-color: #eeeeec; }
+
+.h-desc .col0 .h-desc-img { height: 610px; }
+
+.h-desc .h-desc-slide .h-desc-post .text-center { max-width: 340px; margin: 100px auto; }
+
+.h-desc .h-desc-slide .h-desc-post .text-center h2 { font-size: 44.44px; color: #2a2d2c; font-weight: bold; margin-bottom: 20px; font-family: "Chonburi-rEGULAR"; }
+
+.h-desc .h-desc-slide .h-desc-post .text-center p { font-size: 20px; color: #2a2d2c; margin-bottom: 40px; font-family: "Arsenal-Regular"; }
+
+.h-desc .h-desc-slide .h-desc-post .text-center a { background-color: #2a2d2c; color: #fff; padding: 15px 30px; display: inline-block; font-family: "Arsenal-Regular"; }
+
+.h-desc .h-desc-slide .h-desc-post .text-center a:hover { background-color: #0097a8; color: #fff; }
+
+.h-desc .h-desc-slide-v2 .col0 { height: 490px; }
+
+.h-desc .h-desc-slide-v2 .col0 img { height: 490px; }
+
+.h-desc .h-desc-slide-v2 .col0 .h-desc-post { font-family: "Arsenal-Regular"; }
+
+.h-desc .h-desc-slide-v2 .col0 .h-desc-post .text-center { max-width: 380px; margin: 50px auto; }
+
+.h-desc .h-desc-slide-v2 .col0 .h-desc-post .text-center h2 { font-size: 30px; font-family: "Chonburi-Regular"; color: #2a2d2c; font-weight: bold; margin-bottom: 20px; }
+
+.h-desc .h-desc-slide-v2 .col0 .h-desc-post .text-center p { font-size: 15px; text-align: left; color: #2a2d2c; margin-bottom: 40px; font-family: "Arsenal-Regular"; }
+
+.h-desc .h-desc-slide-v2 .slick-arrow { font-size: 50px; position: absolute; top: 50%; z-index: 1; cursor: pointer; }
+
+.h-desc .h-desc-slide-v2 .h-desc-slide-prev { left: 50%; }
+
+.h-desc .h-desc-slide-v2 .h-desc-slide-next { right: 0%; }
+
+.h-desc .h-desc-slide-v2 .slick-dots { width: 100px; position: absolute; bottom: 0%; right: 20%; }
+
+.h-desc .h-desc-slide { position: relative; margin-bottom: 0 !important; }
+
+.h-desc .h-desc-slide .slick-dots { display: block; bottom: 0%; right: 21.5%; width: 90px; }
+
+.h-desc .h-desc-slide .slick-dots li.slick-active button:before { opacity: 1; background: #000; }
+
+.h-desc .h-desc-slide .slick-dots li button:before { border: solid 1px #000; opacity: 1; font-size: 0px; top: -1; left: -1; border-radius: 50%; color: transparent; width: 10px; height: 10px; }
+
+.h-desc .h-desc-slide-v2 { position: relative; margin-bottom: 0 !important; }
+
+.h-desc .h-desc-slide-v2 .slick-dots { display: block; }
+
+.h-desc .h-desc-slide-v2 .slick-dots li.slick-active button:before { opacity: 1; background: #000; }
+
+.h-desc .h-desc-slide-v2 .slick-dots li button:before { border: solid 1px #000; opacity: 1; font-size: 0px; top: -1; left: -1; border-radius: 50%; color: transparent; width: 10px; height: 10px; }
+
+.h-shop { margin-bottom: 70px; }
+
+.h-shop .text-center a { padding: 14px 29px; border: solid 1px; position: relative; display: inline-block; text-transform: uppercase; font-family: "Arsenal-Regular"; font-size: 20px; }
+
+.h-shop .text-center a:hover { background-color: #0097a8; color: #fff; }
+
+.h-shop .text-center a i { margin-left: 15px; font-size: 20px; }
+
+.h-shop .pro-view-slide-v2 .hv-scale { margin-right: 7px; margin-bottom: 30px; width: 140px !important; }
+
+.h-shop .pro-view-slide-v2 .hv-scale img { width: 140px; height: 140px; }
+
+.h-shop .pro-view-slide-v2 > .hv-scale:last-child { margin-right: 0; }
+
+.h-shop .slick-slider .slick-prev { top: 100%; left: 10px; }
+
+.h-shop .slick-slider .slick-next { top: 100%; right: 10px; }
+
+.h-shop .slick-slider .slick-prev:before, .h-shop .slick-slider .slick-next:before { color: #000; font-size: 70px; font-family: "fontawesome"; }
+
+.h-shop .slick-slider .slick-prev:before { content: "\f104"; }
+
+.h-shop .slick-slider .slick-next:before { content: "\f105"; }
+
+.h-shop .col-lg-3 { max-width: 100%; }
+
+.h-shop-v2 .col-lg-3 { max-width: 25% !important; }
+
+.h-shop-v2 .h-shop-slide-v2 .row { width: auto !important; }
+
+.h-shop .select-nav { display: block; margin-bottom: 25px; }
+
+.h-shop .select-nav h4 { display: inline-block; font-size: 20px; color: #000; font-family: 'Arsenal-Regular'; cursor: pointer; }
+
+.h-shop .select-nav h4:hover { color: #0097a8; }
+
+.h-shop .select-nav ul.nav { display: block; float: right; }
+
+.h-shop .select-nav ul.nav li { display: inline-block; /* margin: 30px; */ font-family: "Arsenal-Regular"; font-size: 20px; position: relative; }
+
+.h-shop .select-nav ul.nav li:not(:last-child) { margin-right: 30px; }
+
+.h-shop .select-nav ul.nav li a.active { padding-bottom: 1px; border-bottom: 1px #000 solid; }
+
+.h-shop .select-nav ul.nav li a:hover { color: #0097a8; }
+
+.h-shop .select-nav ul.item-nav { display: none; position: absolute; top: 20px; padding-top: 13px; z-index: 1; }
+
+.h-shop .select-nav ul.item-nav li:hover a { background-color: #13bebe; }
+
+.h-shop .select-nav ul.item-nav li a { padding: 7px 16px; background-color: #0097a8; color: #fff; font-family: "Arsenal-Regular"; font-size: 18px; display: block; }
+
+.h-desc-v2 .text-center { padding: 100px 100px !important; }
+
+.h-desc-v2 .slick-slider .slick-dots { bottom: 0; width: 90px; left: 20%; }
+
+.h-shop .shop .ct-v2 h4 { color: #2a2d2c; font-size: 23px; margin-bottom: 15px; font-family: "Arsenal-Bold"; }
+
+.h-shop .shop .ct-v2 p { font-family: "Arsenal-Regular"; color: #95a49c; font-size: 20px; margin-bottom: 15px; }
+
+.h-shop .shop .ct-v2 .see-more { color: #2a2d2c; font-size: 15px; text-transform: uppercase; font-family: "Arsenal-Regular"; }
+
+.h-shop .shop .ct-v2 .see-more:hover { color: #0097a8; }
+
+.h-shop .shop-v2 .c-img { height: 225px; }
+
+footer { padding: 40px 0; background-color: #000; color: #fff; line-height: 1.2; font-family: "Arsenal-Regular"; font-size: 20px; }
+
+footer .footer-logo { display: inline-block; margin-bottom: 30px; }
+
+footer .text-center { max-width: 540px; margin: auto; }
+
+footer ul { margin: 20px auto 20px auto; }
+
+footer ul li { display: inline-block; }
+
+footer ul li:not(:last-child) { margin-right: 20px; }
+
+footer ul li a { display: block; }
+
+footer ul li a:hover i { color: #0097a8; }
+
+footer ul li a i { font-size: 21px !important; }
+
+.h-breadcrumb { padding: 20px 0; }
+
+.h-breadcrumb .breadcrumb { border-bottom: 1px solid #231f20; background-color: #fff; padding: 0 0 15px 0; border-radius: 0; }
+
+.h-breadcrumb .breadcrumb li a { color: #0097a8; }
+
+.h-breadcrumb .breadcrumb > li + li:before { font-family: FontAwesome; content: "\\"; color: #0097a8; padding: 0 5px; }
+
+.pro-cate { text-align: center; margin-bottom: 25px; }
+
+.pro-cate .pro-cate-detail { display: inline-block; }
+
+.pro-cate .pro-cate-detail a { padding: 10px 5px; background-color: #f1f1f1; font-size: 14px; font-family: "Arsenal-Regular"; display: inline-block; }
+
+.pro-cate .pro-cate-detail a:hover { background-color: #0097a8; color: #fff; }
+
+.pro-cate .pro-cate-detail a.active { background-color: #bdbdbd; color: #fff; }
+
+.pro-cate .pro-cate-detail a.active:before { content: "\f00d"; color: #fff; font-family: 'fontawesome'; float: right; margin-left: 5px; padding-left: 3px; border-left: 2px solid #fff; }
+
+.pro-cate-slide .slick-arrow { font-size: 50px; position: absolute; cursor: pointer; }
+
+.pro-cate-slide .pro-cate-next { top: -6px; left: -1px; }
+
+.pro-cate-prev { top: -6px; right: -1px; }
+
+.other-pro { margin-bottom: 20px; }
+
+.other-pro .hv-scale { width: 285px; height: 295px; margin: 0 auto 30px auto; }
+
+.other-pro .hv-scale img { width: 285px; height: 295px; }
+
+.h-product { margin-bottom: 30px; font-family: "Arsenal-Regular"; }
+
+.h-product .choose-product { margin-bottom: 30px; }
+
+.h-product .choose-product > ul > li { border-bottom: 1px solid #808080; padding: 15px 0; }
+
+.h-product .choose-product > ul > li h3 { display: inline-block; color: #808080; cursor: pointer; }
+
+.h-product .choose-product > ul > li h3 i { margin-right: 5px; }
+
+.h-product .choose-product > ul > li span { float: right; font-size: 15px; }
+
+.h-product .choose-product > ul > li > ul { display: none; text-align: right; }
+
+.h-product .choose-product > ul > li > ul li { padding: 3px 0; }
+
+.h-product .choose-product > ul > li > ul li > a:hover { color: #0097a8; }
+
+.h-product .te-pagination { text-align: center; margin-bottom: 50px; }
+
+.h-product .te-pagination a, .h-product .te-pagination strong { font-size: 20px; font-family: "Arsenal-Regular"; padding: 0 10px; }
+
+.h-product .te-pagination strong { background-color: #000; color: #fff; }
+
+.h-product .te-pagination a:hover { background-color: #000; color: #fff; }
+
+.h-product-info { padding-bottom: 20px; border-bottom: 1px solid #808080; line-height: 1.2; }
+
+.h-product-info .product-detail > p { font-size: 20px; margin-bottom: 15px; }
+
+.h-product-info .product-detail .title { text-align: left; font-size: 30px; color: #000; }
+
+.h-product-info .product-detail .pro-info { border-bottom: 1px solid #808080; padding: 10px 0; font-family: "Arsenal-Regular"; font-size: 15px; line-height: 1.5; }
+
+.h-product-info .product-detail .pro-info a:hover { color: #0097a8; }
+
+.h-product-info .product-detail .pro-info > p { display: inline-block; color: #808080; }
+
+.h-product-info .product-detail .pro-info form select { width: 100%; height: 50px; margin-top: 20px; font-size: 20px; }
+
+.h-product-info .product-detail .pro-info form label { color: #808080; display: block; /* margin-top: 20px; */ padding: 15px 0; font-size: 15px; }
+
+.h-product-info .product-detail .pro-info form input[type="text"] { width: 50px; height: 50px; text-align: center; border: 1px solid #6c757d; }
+
+.h-product-info .product-detail .pro-info form button { height: 50px; width: 87%; margin-left: 3%; font-size: 20px; color: #fff; background-color: #0097a8; cursor: pointer; }
+
+.h-product-info .product-detail .pro-info form button:hover { background-color: #13bebe; }
+
+.h-product-info .product-detail .pro-info-v2 { border-bottom: none; padding: 10px 0 0 0; margin-bottom: 20px; }
+
+.h-product-info .product-detail .pro-short-desc { font-family: "Arsenal-Regular"; font-size: 15px; }
+
+.h-product-info .product-detail .pro-short-desc p { margin-bottom: 15px; }
+
+.h-product-info .product-detail .pro-short-desc ul { padding-left: 10px; }
+
+.h-product-info .product-detail .pro-short-desc ul li { position: relative; }
+
+.h-product-info .product-detail .pro-short-desc ul li:before { content: ""; width: 3px; height: 3px; background: #000; border-radius: 50%; position: absolute; top: 5px; left: -12px; }
+
+.h-product-info .pro-slide-for .myprev, .h-product-info .pro-slide-for .mynext { display: inline-block; position: absolute; font-size: 50px; z-index: 2; top: 50%; height: 50px; width: 40px; background-color: rgba(255, 255, 255, 0.6); text-align: center; cursor: pointer; }
+
+.h-product-info .pro-slide-for .myprev:hover, .h-product-info .pro-slide-for .mynext:hover { color: #0097a8; }
+
+.h-product-info .pro-slide-for .myprev { left: 0; }
+
+.h-product-info .pro-slide-for .mynext { right: 0; }
+
+.h-product-info .pro-slide-for .mynext:before { content: "\f105"; font-size: 50px; }
+
+.h-product-info .pro-slide-for .myprev:before { content: "\f104"; font-size: 50px; }
+
+.h-product-info .pro-slide-nav .slick-slide { text-align: center; }
+
+.h-product-info .pro-slide-nav img { width: 95px !important; height: 95px; cursor: pointer; }
+
+.pro-cate-v2 { text-align: left; padding-top: 25px; }
+
+.pro-cate-v2 .pro-cate-detail { margin: 0 20px 20px 0; }
+
+.h-shop .justify-content { justify-content: center; }
+
+.h-shop .justify-content > .hv-scale:not(:last-child) { margin-right: 10px; }
+
+.h-shop .justify-content .hv-scale { margin-bottom: 0px; }
+
+.h-shop .justify-content .hv-scale img { max-width: 150px; max-height: 150px; margin-bottom: 25px; }
+
+.h-shop .row25 { margin-left: -25px; margin-right: -25px; }
+
+.h-shop .pro-view-slide { text-align: center; }
+
+.h-shop .pro-view-slide .hv-scale { margin-right: 7px; margin-bottom: 30px; width: 140px !important; }
+
+.h-shop .pro-view-slide .hv-scale img { width: 140px; height: 140px; }
+
+.h-shop .pro-view-slide > .hv-scale:last-child { margin-right: 0; }
+
+.my-modal { font-family: "Arsenal-Regular"; }
+
+.my-modal .modal-dialog { max-width: 900px; }
+
+.my-modal .modal-dialog .modal-content { width: 100%; height: auto; padding: 0 40px; }
+
+.my-modal .modal-dialog .modal-content .modal-header { display: block; text-align: center; border-bottom: 1px solid #000; }
+
+.my-modal .modal-dialog .modal-content .modal-header .close-modal { position: absolute; top: 0; right: 5px; font-size: 25px; background-color: transparent; cursor: pointer; color: #999595; }
+
+.my-modal .modal-dialog .modal-content .modal-header .close-modal:hover { color: #000; }
+
+.my-modal .modal-dialog .modal-content .modal-header .close-modal:focus { outline: none; }
+
+.my-modal .modal-dialog .modal-content .modal-header .modal-title { font-size: 24px; color: #2a2d2c; }
+
+.my-modal .modal-dialog .modal-content .modal-body table { width: 100%; }
+
+.my-modal .modal-dialog .modal-content .modal-body table td { border-top: none; }
+
+.my-modal .modal-dialog .modal-content .modal-body table .item { display: inline-block; float: left; }
+
+.my-modal .modal-dialog .modal-content .modal-body table .item a { display: block; }
+
+.my-modal .modal-dialog .modal-content .modal-body table .item a img { width: 100px; }
+
+.my-modal .modal-dialog .modal-content .modal-body table .pro-info-pay { margin-left: 120px; }
+
+.my-modal .modal-dialog .modal-content .modal-body table .pro-info-pay h4 { text-align: left; font-size: 30px; color: #000; margin-bottom: 15px; font-weight: bold; }
+
+.my-modal .modal-dialog .modal-content .modal-body table .pro-info-pay p { font-size: 20px; margin-bottom: 20px; }
+
+.my-modal .modal-dialog .modal-content .modal-body table .pro-info-pay a { color: #0097a8; }
+
+.my-modal .modal-dialog .modal-content .modal-body table .pro-info-pay a:hover { color: #000; }
+
+.my-modal .modal-dialog .modal-content .modal-body table .td-w-25 { width: 25%; text-align: center; }
+
+.my-modal .modal-dialog .modal-content .modal-body table .td-w-25 form input { width: 50px; height: 50px; text-align: center; border: 1px solid #000; }
+
+.my-modal .modal-dialog .modal-content .modal-body table .td-w-25 p { color: #2a2d2c; font-size: 30px; }
+
+.my-modal .modal-dialog .modal-content .modal-footer { border-top: none; display: block; }
+
+.my-modal .modal-dialog .modal-content .modal-footer .modal-btn { display: inline-block; font-size: 20px; width: 48%; height: 50px; line-height: 50px; border: solid 1px #000; text-align: center; }
+
+.my-modal .modal-dialog .modal-content .modal-footer .modal-btn:hover { background-color: #0097a8; border: 1px solid #0097a8; color: #fff; }
+
+.my-modal .modal-dialog .modal-content .modal-footer .modal-btn-left { float: left; }
+
+.my-modal .modal-dialog .modal-content .modal-footer .modal-btn-left i { float: left; line-height: 50px; margin-left: 15px; }
+
+.my-modal .modal-dialog .modal-content .modal-footer .modal-btn-right { float: right; }
+
+.my-modal .modal-dialog .modal-content .modal-footer .modal-btn-right i { float: right; line-height: 50px; margin-right: 15px; }
+
+.blog { color: #2a2d2c; font-family: "Arsenal-Regular"; }
+
+.blog .search-form-blog { display: flex; justify-content: center; align-items: center; margin-bottom: 50px; }
+
+.blog .search-form-blog form { display: inline-block; position: relative; width: 42.5%; }
+
+.blog .search-form-blog form input { width: 100%; /* padding: 26px 0px 26px 30px; */ color: #2a2d2c; height: 45px; font-size: 16px; }
+
+.blog .search-form-blog form button { position: absolute; right: 40px; right: 5%; top: 23%; cursor: pointer; outline: none; background-color: transparent; }
+
+.blog .search-form-blog form button i { font-size: 25px; background-color: transparent; }
+
+.blog a:hover { color: #0097a8; }
+
+.blog .time { font-size: 15px; margin-bottom: 15px; }
+
+.blog .first-blog { margin: 60px auto 80px auto; }
+
+.blog .first-blog .title { color: #2a2d2c; text-align: left; }
+
+.blog .first-blog .short-desc { line-height: 1.1; margin-bottom: 20px; font-size: 20px; }
+
+.blog .first-blog .c-img { padding-top: 60%; }
+
+.blog .ct { margin-bottom: 50px; }
+
+.blog .ct .c-img { padding-top: 59%; }
+
+.blog .ct .hv-scale { margin-bottom: 25px; }
+
+.blog .ct h3 { font-size: 20px; margin-bottom: 25px; }
+
+.blog-v2 { margin-bottom: 50px; }
+
+.blog-v2 .first-blog { margin: 0 auto 30px auto; }
+
+.blog-v2 .first-blog .time { margin-top: 25px; }
+
+.blog-v2 h3 { font-size: 20px; color: #0097a8; margin-bottom: 37px; }
+
+.blog-v2 .first-post .c-img { padding-top: 64%; }
+
+.blog-v2 .first-post .title { font-size: 20px; text-align: left; margin-top: 25px; }
+
+.blog-v2 .first-post .title a:hover { color: #2a2d2c; }
+
+.blog-v2 .first-post .short-desc { font-size: 15px; line-height: 1.1; }
+
+.blog-v2 .mini-post { margin-top: 30px; }
+
+.blog-v2 .mini-post > .c-img { float: left; width: 105px; height: 80px; padding-top: 0%; }
+
+.blog-v2 .mini-post .item { margin-left: 130px; }
+
+.blog-v2 .mini-post .item h4 { font-size: 20px; }
+
+.blog-v2 .mini-post .item .time { margin-top: 15px; }
+
+.h-cart { margin-bottom: 50px; }
+
+.h-cart table { min-width: 485px; width: 100%; }
+
+.h-cart table tbody { border-top: none; }
+
+.h-cart table th { font-size: 15px; color: #808080; font-weight: normal; border-bottom: none; border-top: none; }
+
+.h-cart table td { border-top: none; }
+
+.h-cart table .item { display: inline-block; float: left; }
+
+.h-cart table .item a { display: block; }
+
+.h-cart table .item a img { width: 100px; }
+
+.h-cart table .pro-info-pay { margin-left: 120px; }
+
+.h-cart table .pro-info-pay h4 { text-align: left; font-size: 30px; color: #000; margin-bottom: 15px; }
+
+.h-cart table .pro-info-pay p { font-size: 20px; margin-bottom: 20px; }
+
+.h-cart table .pro-info-pay a { color: #0097a8; }
+
+.h-cart table .pro-info-pay a:hover { color: #27e5fa; }
+
+.h-cart table .td-w-25 { width: 25%; }
+
+.h-cart table .td-w-25 form input { width: 50px; height: 50px; text-align: center; }
+
+.h-cart table .td-w-25 p { color: #2a2d2c; font-size: 30px; }
+
+.h-cart .pay { font-family: "Arsenal-Regular"; padding: 25px 10px 20px 10px; background-color: #eeeeec; }
+
+.h-cart .pay span { color: #808080; font-size: 14px; margin-bottom: 25px; display: inline-block; }
+
+.h-cart .pay .price { font-size: 30px; font-family: "Arsenal-Bold"; margin-bottom: 25px; }
+
+.h-cart .pay .justify-content { justify-content: space-between; }
+
+.h-cart .pay .justify-content img { max-height: 42px; }
+
+.h-cart .pay input { border: solid 1px #2a2b2c; width: 55%; margin-left: 10px; }
+
+.h-cart .pay .continue { margin-top: 40px; display: block; width: 100%; padding: 14px 0; font-size: 20px; background-color: #2a2d2c; color: #fff; }
+
+.h-cart .pay .continue:hover { background-color: #0097a8; color: #fff; }
+
+.h-cart .pay .cancel { display: inline-block; text-transform: uppercase; font-size: 20px; margin-top: 20px; color: #0097a8; }
+
+.h-cart .pay .cancel:hover { color: #2a2d2c; }
+
+.h-pay { margin-bottom: 50px; color: #808080; font-family: "Arsenal-Regular"; }
+
+.h-pay .col0 { padding-right: 15px; padding-left: 15px; }
+
+.h-pay h1 { margin-bottom: 20px; }
+
+.h-pay h1 span { margin-left: 15px; font-size: 20px; color: #2a2d2c; text-transform: uppercase; font-weight: bold; }
+
+.h-pay .info-pay .form-control { outline: none; font-size: 15px; border-radius: 0; }
+
+.h-pay .info-pay .form-control:focus { box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25); }
+
+.h-pay .info-pay p { margin-bottom: 15px; }
+
+.h-pay .info-pay input { height: 45px; }
+
+.h-pay .info-pay .address { height: 100px; }
+
+.h-pay .info-pay .message { height: 160px; }
+
+.h-pay .pay { font-family: "Arsenal-Regular"; padding: 15px 10px 20px 10px; background-color: #eeeeec; }
+
+.h-pay .pay .border-bot { border-bottom: 1px solid #2a2b2c; padding-top: 10px; }
+
+.h-pay .pay .border-bot p { margin-bottom: 10px; }
+
+.h-pay .pay .border-bot span { margin-bottom: 10px; display: inline-block; }
+
+.h-pay .pay .price { font-size: 30px; font-family: "Arsenal-Bold"; margin-bottom: 15px; }
+
+.h-pay .pay .payment { padding: 20px 15px; }
+
+.h-pay .pay .payment .radio { margin-top: 20px; }
+
+.h-pay .pay .payment .radio p { font-size: 15px; margin-left: 35px; margin-top: 4px; }
+
+.h-pay .pay .payment input[type=radio] { display: none; }
+
+.h-pay .pay .payment input[type=radio]:checked + .radiospan:before { content: ''; background: #000; width: 15px; height: 15px; position: absolute; top: 4px; left: 4px; }
+
+.h-pay .pay .payment .radiospan { width: 25px; height: 25px; border: 1px solid #2a2b2c; background-color: #fff; position: relative; display: inline-block; float: left; }
+
+.h-pay .pay .payment .sale { color: #c22d2c; margin-top: 5px; display: inline-block; }
+
+.h-pay .pay .continue { margin-top: 40px; display: block; width: 100%; padding: 14px 0; font-size: 20px; background-color: #2a2d2c; color: #fff; }
+
+.h-pay .pay .continue:hover { background-color: #0097a8; color: #fff; }
+
+.h-pay .pay .cancel { display: inline-block; text-transform: uppercase; font-size: 20px; margin-top: 20px; color: #0097a8; }
+
+.h-pay .pay .cancel:hover { color: #2a2d2c; }
+
+.h-pay .pay .pay-bank { padding: 0px 30px 0 45px; position: relative; }
+
+.h-pay .pay .pay-bank i { position: absolute; top: 3px; }
+
+.h-pay .pay .pay-bank select { border: none; padding-left: 12px; /* float: left; */ background-color: transparent; }
+
+.h-pay .pay .pay-bank-info { background: #fff; padding: 15px 0px 35px 15px; margin: 20px 0; text-align: left; }
+
+.h-pay .pay .pay-bank-info span { font-size: 20px; font-family: "Arsenal-Bold"; margin-bottom: 20px; display: inline-block; }
+
+.h-pay .pay-v2 { line-height: 1.2; font-size: 15px; padding: 0 40px; background-color: #fff; }
+
+.h-pay .pay-v2 .price { font-size: 20px; }

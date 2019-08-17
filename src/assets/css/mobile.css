@@ -1,0 +1,95 @@
+@media (min-width: 1230px) { .container { max-width: 1230px; } }
+
+@media (max-width: 992px) { .hidden-md { display: none !important; }
+  header { position: relative; padding: 5px 0; }
+  header .mb-search .search { width: 100%; margin-bottom: 0; }
+  header .mb-search .search .button-hide { display: none; }
+  header .mb-search .search form { display: inline-block; position: relative; width: 100%; margin-left: 0; }
+  header .mb-search .search form input { border: 1px solid #0097a8; border-radius: 5px; display: inline-block; width: 100%; }
+  header .mb-search .search form button { position: absolute; top: 2px; right: -10px; background: none; }
+  header .mb-search .search form button i { font-size: 18px; color: #0097a8; }
+  header .mb-search .cart { position: fixed; bottom: 55px; right: 10px; width: 50px; height: 50px; border-radius: 50%; padding: 0; z-index: 999; }
+  header .mb-search .cart:hover { background-color: #15cee3; }
+  header .mb-search .cart img { margin-top: 12px; position: relative; float: left; margin-left: 8px; }
+  header .mb-search .cart span { position: absolute; top: 9px; width: 20px; height: 20px; right: 3px; }
+  header .menu-btn { display: inline-block; vertical-align: middle; width: 40px; height: 40px; border-radius: 100%; color: #fff; background: #0097a8; position: absolute; right: 15px; top: 32px; margin-top: -20px; z-index: 1; opacity: 1; font-size: 17px; cursor: pointer; }
+  header .menu-btn:focus { outline: none; }
+  header .nav-bar.active { display: block; }
+  .relative .my-slick .my-slide-post > img { height: 600px; }
+  .h-desc .h-desc-slide .slick-dots { bottom: 0; }
+  footer { font-size: 14px; }
+  footer .footer-logo { margin-bottom: 20px; }
+  .h-shop-slide .col-md-6 { max-width: 100%; }
+  .h-shop-v2 .col-lg-3 { max-width: 50% !important; }
+  .h-desc-v2 .text-center { padding: 40px !important; }
+  .blog .first-blog .title { margin-top: 25px; }
+  .h-cart .pay { margin-top: 30px; }
+  .h-cart .pay .justify-content { justify-content: center; }
+  .mar-md-bot30 { margin-bottom: 30px; }
+  .h-pay .pay-v2 { margin-bottom: 30px; }
+  .h-product-info .pro-slide-nav { margin-bottom: 30px; } }
+
+@media all and (max-width: 768px) { .h-cart table .pro-info-pay h4 { font-size: 20px; }
+  .h-cart table .pro-info-pay p { font-size: 15px; }
+  .h-cart table .pro-info-pay a { font-size: 14px; }
+  .h-cart table .td-w-25 form input { width: 40px; height: 40px; font-size: 15px; }
+  .h-cart table .td-w-25 p { font-size: 20px; }
+  .h-desc .col0 { height: auto; background-color: #eeeeec; }
+  .h-desc .col0 .h-desc-img { height: auto; }
+  .relative .my-slick .my-slide-post > img { height: 400px; }
+  .relative .my-slick .my-slide-post .slide-desc .container h2 { font-size: 30px; }
+  .relative .search-form form input { height: 60px; }
+  .relative .search-form form button { font-size: 35px; }
+  .mar-sm-bot30 { margin-bottom: 30px; }
+  .my-modal { font-family: "Arsenal-Regular"; }
+  .my-modal .modal-dialog .modal-content .modal-header .modal-title { font-size: 18px; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr { width: 100%; display: block; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-1 { display: block; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-1:before { content: " " attr(data-content) ""; display: block; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-1 .item { display: block; float: none; text-align: left; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-1 .item a { display: inline-block; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-1 .pro-info-pay { margin-left: 0px; margin-top: 20px; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-1 .pro-info-pay h4 { font-size: 18px; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-1 .pro-info-pay p { font-size: 16px; margin-bottom: 10px; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-1 .pro-info-pay a { color: #0097a8; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-1 .pro-info-pay a:hover { color: #000; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-2 { width: 25%; text-align: left; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-2:before { content: " " attr(data-content) ""; display: block; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-3 { width: 75%; text-align: left; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-3 p { font-size: 16px; line-height: 50px; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-3:before { content: " " attr(data-content) ""; display: block; } }
+
+@media all and (max-width: 576px) { .h-shop { margin-bottom: 40px; }
+  .h-shop .select-nav h4 { display: block; margin-bottom: 15px; }
+  .h-shop .select-nav ul.nav { float: left; margin-bottom: 15px; }
+  .relative .my-slick .my-slide-post .slide-desc .container h2 { font-size: 25px; }
+  .relative .my-slick .my-slide-post .slide-desc .container > a { font-size: 16px; }
+  .h-desc .h-desc-slide .h-desc-post { padding: 0 20px; }
+  .h-desc .h-desc-slide .h-desc-post .text-center h2 { font-size: 25px; }
+  .h-desc .h-desc-slide .h-desc-post .text-center p { font-size: 16px; }
+  .blog .search-form-blog form { width: 60%; }
+  .my-modal { font-family: "Arsenal-Regular"; }
+  .my-modal .modal-dialog .modal-content .modal-header .modal-title { font-size: 18px; }
+  .my-modal .modal-dialog .modal-content .modal-body .table-responsive { max-height: 350px; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-1 .pro-info-pay { margin-left: 0px; margin-top: 20px; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-1 .pro-info-pay h4 { font-size: 18px; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-1 .pro-info-pay p { font-size: 16px; margin-bottom: 10px; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-1 .pro-info-pay a { color: #0097a8; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-1 .pro-info-pay a:hover { color: #000; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-2 { width: 25%; text-align: left; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-3 { width: 75%; text-align: left; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-3 p { font-size: 16px; line-height: 50px; } }
+
+@media all and (max-width: 480px) { .h-shop-v2 .col-lg-3 { max-width: 100% !important; }
+  header .menu-btn { width: 30px; height: 30px; font-size: 15px; top: 30px; }
+  .h-pay .pay-v2 { padding: 0; }
+  footer .text-center { max-width: 80%; }
+  .my-modal { font-family: "Arsenal-Regular"; }
+  .my-modal .modal-dialog .modal-content { padding: 0 5px; }
+  .my-modal .modal-dialog .modal-content .modal-body { padding: 0; }
+  .my-modal .modal-dialog .modal-content .modal-body .table-responsive { max-height: 350px; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-2 input { width: 40px; height: 40px; }
+  .my-modal .modal-dialog .modal-content .modal-body table tr .td-3 p { line-height: 40px; }
+  .my-modal .modal-dialog .modal-content .modal-footer .modal-btn { width: 100%; display: block; }
+  .my-modal .modal-dialog .modal-content .modal-footer .modal-btn:not(:first-child) { margin-top: 20px; }
+  .relative .search-form form { width: 70%; } }

@@ -1,0 +1,31 @@
+<div class="container">
+  	<h3 style="font-size: 20px; font-weight: 700;">Trang quản lý sản phẩm</h3>
+  	<div class="row row125">
+  		<div class="col-lg-12 col-md-12 col-xs-12 col125" style="margin-bottom: 20px;">
+  			<button routerLinkActive="active" routerLink="/add-product" type="button" class="btn btn-success float-right"><i style="margin-right: 5px;" class="fa fa-plus" aria-hidden="true"></i>Thêm mới</button>
+  		</div>
+  		<div class="col-lg-12 col-md-12 col-xs-12 col125">
+  			<div class="row row75">
+  				<div class="col-lg-3 col-md-6 col-sm-6 shop col75" *ngFor="let product of products">
+  					<a href="/products/{{product.id}}" class="smooth c-img hv-scale" title="">
+  						<img src="{{product.image}}" alt="{{product.name}}" class="img-responsive">
+  					</a>
+  					<div class="ct">
+  						<h4>
+  							<a href="/products/{{product.id}}" class="smooth" title="">{{product.name}}</a>
+  						</h4>
+  						<a href="#" class="smooth" title="">{{product.category_name}}</a>
+  						<p>Chỉ từ <del>{{product.old_price}} đ</del>
+  							<span>{{product.new_price}} đ</span>
+  						</p>
+  					</div>
+  					<div class="btn-group" style="margin-top: 15px;"> 
+  						<button type="button" class="btn btn-primary" routerLink="/products/edit/{{product.id}}"><i class="fa fa-pencil" aria-hidden="true" style="margin-right: 5px;"></i>Sửa</button>
+  						<button style="margin-left: 15px;" type="button" class="btn btn-danger" (click)="deleteProduct(product)"><i class="fa fa-trash" aria-hidden="true" style="margin-right: 5px;"></i>Xoá</button>
+  						<!-- <button (click)="clickMe()"class="btn btn-default">Click me</button> -->
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>

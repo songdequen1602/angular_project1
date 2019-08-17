@@ -1,0 +1,91 @@
+.about {
+  font-size: 14px;
+}
+
+.about .about-title {
+  margin-bottom: 20px;
+}
+
+.about .about-title:before {
+  width: 320px;
+  left: calc(50% - 320px / 2);
+}
+
+.about .showroom-box .c-img {
+  padding-top: 56%;
+}
+
+.about .showroom-box .showroom-info {
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(/assets/images/bg-linear.png);
+}
+.hv-light {
+  display: inline-block;
+  vertical-align: top;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+
+.hv-light:before, .hv-light:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hv-light:before {
+  right: 0;
+  bottom: 0;
+  background: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hv-light:after {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-transition: 0.75s ease-in-out;
+  -moz-transition: 0.75s ease-in-out;
+  -ms-transition: 0.75s ease-in-out;
+  -o-transition: 0.75s ease-in-out;
+  transition: 0.75s ease-in-out;
+  -webkit-transform: scale3d(2, 1.5, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+  -moz-transform: scale3d(2, 1.5, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+  -o-transform: scale3d(2, 1.5, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+  -ms-transform: scale3d(2, 1.5, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+  transform: scale3d(2, 1.5, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+}
+
+.hv-light:hover:before {
+  background: rgba(242, 211, 0, 0.2);
+}
+
+.hv-light:hover:after {
+  -webkit-transform: scale3d(2, 1.5, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+  -moz-transform: scale3d(2, 1.5, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+  -o-transform: scale3d(2, 1.5, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+  -ms-transform: scale3d(2, 1.5, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+  transform: scale3d(2, 1.5, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+}
+
+.smooth {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}

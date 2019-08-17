@@ -1,0 +1,95 @@
+<div class="h-breadcrumb">
+  <div class="container">
+    <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList" *ngIf="product">
+      <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+        <a itemprop="item" href="/">
+          <span itemprop="name">Trang chủ</span>
+        </a>
+        <meta itemprop="position" content="1">
+      </li>
+      <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+        <a itemprop="item" href="/products">
+          <span itemprop="name">Sản phẩm</span>
+        </a>
+        <meta itemprop="position" content="1">
+      </li>
+
+    </ul>
+  </div>
+</div>
+<div class="pro-cate">
+  <div class="container pro-cate-slide">
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Tôn giáo</a>
+    </div>
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Tạo động lực</a>
+    </div>
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Tranh văn phòng</a> 
+    </div>
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Hoa</a>
+    </div>
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Bắc âuo</a>
+    </div>
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Tối giản</a>
+    </div>
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Sơn dầu</a>
+    </div>
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Mmàu nước</a>
+    </div>
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Việt Nam</a>
+    </div>
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Tôn giáo</a>
+    </div>
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Tôn giáo</a>
+    </div>
+  </div>
+</div>
+<div class="h-product">
+  <div class="container">
+    <div class="row row125">
+      <div class="col-lg-9 col-md-12 col-xs-12 col125">
+        <div class="row row75">
+          <div class="col-lg-4 col-md-6 col-sm-6 shop col75" *ngFor="let product of products">
+            <a href="/products/{{product.id}}" class="smooth c-img hv-scale" title="">
+              <img src="{{product.image}}" alt="{{product.name}}" class="img-responsive">
+            </a>
+            <div class="ct">
+              <h4>
+                <a href="/products/{{product.id}}" class="smooth" title="">{{product.name}}</a>
+              </h4>
+              <a href="#" class="smooth" title="">{{product.category_name}}</a>
+              <p>Chỉ từ <del>{{product.old_price}} đ</del>
+                <span>{{product.new_price}} đ</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="te-pagination">
+          <a class="smooth float-left" href="#"><i class="fa fa-angle-left"></i></a>
+          <a class="smooth" href="#">1</a>
+          <strong>2</strong>
+          <a class="smooth" href="#">3</a>
+          <a class="smooth float-right" href="#"><i class="fa fa-angle-right"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-12 col-xs-12 col125 choose-product">
+        <a href="#" class="hv-light" style="margin-bottom: 30px; display: block;">
+         <img src="../assets/images/banner1.png" class="img-fluid">
+       </a>
+       <a href="#" class="hv-light">
+         <img src="../assets/images/banner1.png" class="img-fluid">
+       </a>
+     </div>
+   </div>
+ </div>
+</div>

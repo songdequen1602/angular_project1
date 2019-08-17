@@ -1,0 +1,198 @@
+<div class="h-breadcrumb">
+  <div class="container">
+    <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList" *ngIf="product">
+      <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+        <a itemprop="item" href="/">
+          <span itemprop="name">Trang chủ</span>
+        </a>
+        <meta itemprop="position" content="1">
+      </li>
+      <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+        <a itemprop="item" href="/products">
+          <span itemprop="name">Sản phẩm</span>
+        </a>
+        <meta itemprop="position" content="1">
+      </li>
+
+      <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+        <a itemprop="item" href="/products/{{product.id}}">
+          <span itemprop="name">{{product.name}}</span>
+        </a>
+        <meta itemprop="position" content="2">
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="container h-product-info">
+  <div class="row" *ngIf="product">
+    <div class="col-lg-7 col-md-12 col-sm-12">
+      <div class="pro-slide-for">
+        <a title="" class="fancy" data-fancybox="gallery" href="{{product.image}}">
+          <img src="{{product.image}}" alt="{{product.name}}" class="img-responsive">
+        </a>
+      </div>
+        <!-- <div class="pro-slide-nav">
+          <img src="../assets/images/choose-pro.png" alt="" class="img-responsive">
+          <img src="../assets/images/choose-pro.png" alt="" class="img-responsive">
+          <img src="../assets/images/choose-pro.png" alt="" class="img-responsive">
+          <img src="../assets/images/choose-pro.png" alt="" class="img-responsive">
+        </div> -->
+
+      </div>
+      <div class="col-lg-5 col-md-12 col-sm-12 product-detail">
+        <h1 class="title">{{product.name}}</h1>
+        <p>Chỉ từ <span>{{product.new_price}} đ</span></p>
+        <div class="pro-info clearfix">
+          <p>Sản phẩm</p>
+          <div class="float-right text-right">
+            <p><a href="#" class="smooth" title="">{{product.category}}</a></p>
+          </div>
+        </div>
+        <div class="pro-info clearfix">
+          <p>Không gian</p>
+          <div class="float-right text-right">
+            <p><a href="#" class="smooth" title="">Văn phòng</a></p>
+            <p><a href="#" class="smooth" title="">Phòng khách</a></p>
+            <p><a href="#" class="smooth" title="">Quán Cafe</a></p>
+            <p><a href="#" class="smooth" title="">Khách sạn</a></p>
+          </div>
+        </div>
+        <div class="pro-info clearfix">
+          <p>Phong cách</p>
+          <div class="float-right text-right">
+            <p><a href="#" class="smooth" title="">Bắc Âu</a></p>
+            <p><a href="#" class="smooth" title="">Tối giản</a></p>
+            <p><a href="#" class="smooth" title="">Hiện đại</a></p>
+          </div>
+        </div>
+        <div class="pro-info clearfix">
+          <p>Màu chủ đạo</p>
+          <div class="float-right text-right">
+            <p><a href="#" class="smooth" title="">Màu nóng</a></p>
+          </div>
+        </div>
+        <div class="pro-info pro-info-v2 clearfix">
+          <p>Chọn kích thước</p>
+          <form action="" method="">
+            <select>
+              <option>Nhỏ(30 - 40 cm) (300.000 đ)</option>
+              <option>Nhỏ(30 - 40 cm) (300.000 đ)</option>
+              <option>Nhỏ(30 - 40 cm) (300.000 đ)</option>
+            </select>
+            <label>Chọ số lượng</label>
+            <div class="d-flex">
+              <input type="text" name="" value="1" />
+              <button type="button" data-toggle="modal" data-target="#exampleModalScrollable">Thêm vào giỏ hàng</button>
+            </div>
+          </form>
+        </div>
+        <div class="pro-short-desc">
+          <p>{{product.desc}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container pro-cate pro-cate-v2">
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Tôn giáo</a>
+    </div>
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Tạo động lực</a>
+    </div>
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Tranh văn phòng</a> 
+    </div>
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Hoa</a>
+    </div>
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Bắc âuo</a>
+    </div>
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Tối giản</a>
+    </div>
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Sơn dầu</a>
+    </div>
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Mmàu nước</a>
+    </div>
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Việt Nam</a>
+    </div>
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Tôn giáo</a>
+    </div>
+    <div class="pro-cate-detail">
+      <a href="#" class="smooth" title="">Tôn giáo</a>
+    </div>
+  </div>
+  
+  <div class="h-shop container">
+    <h3 class="title">Tranh canvas liên quan</h3>
+    <div class="pro-view-slide-v2">
+      <a href="#" class="smooth hv-scale" title="">
+        <img src="../assets/images/img-pr-2.jpg" alt="" class="img-responsive">
+      </a>
+      <a href="#" class="smooth hv-scale" title="">
+        <img src="../assets/images/img-pr-2.jpg" alt="" class="img-responsive">
+      </a>
+      <a href="#" class="smooth hv-scale" title="">
+        <img src="../assets/images/img-pr-2.jpg" alt="" class="img-responsive">
+      </a>
+      <a href="#" class="smooth hv-scale" title="">
+        <img src="../assets/images/img-pr-2.jpg" alt="" class="img-responsive">
+      </a>
+      <a href="#" class="smooth hv-scale" title="">
+        <img src="../assets/images/img-pr-2.jpg" alt="" class="img-responsive">
+      </a>
+      <a href="#" class="smooth hv-scale" title="">
+        <img src="../assets/images/img-pr-2.jpg" alt="" class="img-responsive">
+      </a>
+      <a href="#" class="smooth hv-scale" title="">
+        <img src="../assets/images/img-pr-2.jpg" alt="" class="img-responsive">
+      </a>
+      <a href="#" class="smooth hv-scale" title="">
+        <img src="../assets/images/img-pr-2.jpg" alt="" class="img-responsive">
+      </a>
+      <a href="#" class="smooth hv-scale" title="">
+        <img src="../assets/images/img-pr-2.jpg" alt="" class="img-responsive">
+      </a>
+      <a href="#" class="smooth hv-scale" title="">
+        <img src="../assets/images/img-pr-2.jpg" alt="" class="img-responsive">
+      </a>
+    </div>
+    <div class="text-center">
+      <a href="#" class="smooth" title="">Xem toàn bộ
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </a>
+    </div>    
+  </div>
+
+  <div class="other-pro container">
+    <h3 class="title">Trên các sản phẩm khác</h3>
+    <div class="row row75">
+      <div class="col-lg-3 col-md-6 col-xs-12 col75">
+        <a href="#" class="smooth hv-scale" title="">
+          <img src="../assets/images/img-pr-2.jpg" alt="" class="img-responsive">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6 col-xs-12 col75">
+        <a href="#" class="smooth hv-scale" title="">
+          <img src="../assets/images/img-pr-2.jpg" alt="" class="img-responsive">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6 col-xs-12 col75 hidden-md">
+        <a href="#" class="smooth hv-scale" title="">
+          <img src="../assets/images/img-pr-2.jpg" alt="" class="img-responsive">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6 col-xs-12 col75 hidden-md">
+        <a href="#" class="smooth hv-scale" title="">
+          <img src="../assets/images/img-pr-2.jpg" alt="" class="img-responsive">
+        </a>
+      </div>
+    </div>
+  </div>

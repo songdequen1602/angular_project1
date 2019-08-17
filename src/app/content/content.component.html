@@ -1,0 +1,230 @@
+<div class="relative ln-bg mar-sm-bot30">
+    <div class="my-slick">
+        <div class="my-slide-post">
+            <img src="./assets/images//slide3.jpg" alt="" class="img-responsive">
+            <div class="slide-desc">
+                <div class="container">
+                    <div class="slide-desc-v2">
+                        <h2>
+                            Thử thay đổi một chút trong 
+                            không gian
+                        </h2>
+                        <a href="#" class="smooth" title="">TÌM HIỂU THÊM</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-slide-post">
+            <img src="./assets/images//slide2.jpg" alt="" class="img-responsive">
+            <div class="slide-desc">
+                <div class="container">
+                    <div class="slide-desc-v2">
+                        <h2>
+                            Thử thay đổi một chút trong 
+                            không gian
+                        </h2>
+                        <a href="#" class="smooth" title="">TÌM HIỂU THÊM</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-slide-post">
+            <img src="./assets/images//slide3.jpg" alt="" class="img-responsive">
+            <div class="slide-desc">
+                <div class="container">
+                    <div class="slide-desc-v2">
+                        <h2>
+                            Thử thay đổi một chút trong 
+                            không gian
+                        </h2>
+                        <a href="#" class="smooth" title="">TÌM HIỂU THÊM</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search-form">
+        <form>
+            <input type="text" name="" placeholder="THỬ TÌM XEM SAO">
+            <button type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+        </form>
+    </div>
+</div>
+<div class="h-desc container-fluid container-fluid0">
+    <div class="h-desc-slide">
+        <div class="row row0">
+            <div class="col-lg-6 col-md-6 col-sm-12 col0">
+                <a href="#" class="smooth hv-scale" title="">
+                    <img src="./assets/images/img-1.jpg" class="img-responsive h-desc-img" alt="">
+                </a>
+            </div>
+            <div class=" col-lg-6 col-md-6 col-sm-12 col0">
+                <div class="h-desc-post">
+                    <div class="text-center">
+                        <h2>Tô điểm nơi làm việc</h2>
+                        <p>“ A strong woman understands that the gifts such as logic, decisiveness, and strength are just as feminine as intuition and emotional connection. She values and uses all of her gifts. ”</p>
+                        <a href="#" class="smooth" title="">CALL TO ACTION</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row0">
+            <div class="col-lg-6 col-md-6 col-sm-12 col0">
+                <a href="#" class="smooth hv-scale" title="">
+                    <img src="./assets/images/img-1.jpg" class="img-responsive h-desc-img" alt="">
+                </a>
+            </div>
+            <div class=" col-lg-6 col-md-6 col-sm-12 col0">
+                <div class="h-desc-post">
+                    <div class="text-center">
+                        <h2>Tô điểm nơi làm việc</h2>
+                        <p>“ A strong woman understands that the gifts such as logic, decisiveness, and strength are just as feminine as intuition and emotional connection. She values and uses all of her gifts. ”</p>
+                        <a href="#" class="smooth" title="">CALL TO ACTION</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row0">
+            <div class="col-lg-6 col-md-6 col-sm-12 col0">
+                <a href="#" class="smooth hv-scale" title="">
+                    <img src="./assets/images/img-1.jpg" class="img-responsive h-desc-img" alt="">
+                </a>
+            </div>
+            <div class=" col-lg-6 col-md-6 col-sm-12 col0">
+                <div class="h-desc-post">
+                    <div class="text-center">
+                        <h2>Tô điểm nơi làm việc</h2>
+                        <p>“ A strong woman understands that the gifts such as logic, decisiveness, and strength are just as feminine as intuition and emotional connection. She values and uses all of her gifts. ”</p>
+                        <a href="#" class="smooth" title="">CALL TO ACTION</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="h-shop">
+    <div class="container">
+        <h3 class="title">Đang giảm giá</h3>
+        <div class="row row75">
+            <div class="col-lg-3 col-md-6 col-sm-6 shop col75" *ngFor="let product of products">
+                <a href="/products/{{product.id}}" class="smooth c-img hv-scale" title="">
+                    <img src="{{product.image}}" alt="{{product.name}}" class="img-responsive">
+                </a>
+                <div class="ct">
+                    <h4>
+                        <a href="/products/{{product.id}}" class="smooth" title="">{{product.name}}</a>
+                    </h4>
+                    <a href="#" class="smooth" title="">{{product.category_name}}</a>
+                    <p>Chỉ từ <del>{{product.old_price}} đ</del>
+                        <span>{{product.new_price}} đ</span>
+                    </p>
+                </div>
+            </div>   
+        </div>
+
+        <div class="text-center">
+            <a href="#" class="smooth" title="">Xem toàn bộ
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="h-desc h-desc-v2">
+    <div class="container">
+        <div class="h-desc-slide">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="text-center">
+                        <p>“ A strong woman understands that the gifts such as logic, decisiveness, and strength are just as feminine as intuition and emotional connection. She values and uses all of her gifts. ”</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="hv-scale">
+                        <a href="#" class="smooth a-img" title="">
+                            <img src="./assets/images/img-2.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="text-center">
+                        <p>“ A strong woman understands that the gifts such as logic, decisiveness, and strength are just as feminine as intuition and emotional connection. She values and uses all of her gifts. ”</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="hv-scale">
+                        <a href="#" class="smooth a-img" title="">
+                            <img src="./assets/images/img-2.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="text-center">
+                        <p>“ A strong woman understands that the gifts such as logic, decisiveness, and strength are just as feminine as intuition and emotional connection. She values and uses all of her gifts. ”</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="hv-scale">
+                        <a href="#" class="smooth a-img" title="">
+                            <img src="./assets/images/img-2.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container h-shop">
+    <h3 class="title">Block mới nhất</h3>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-xs-12 shop shop-v2">
+            <a href="#" class="smooth c-img hv-scale" title="">
+                <img src="./assets/images/img-post.jpg" alt="" class="img-responsive">
+            </a>
+            <div class="ct ct-v2">
+                <h4>
+                    <a href="#" class="smooth" title="">Lorem ipsum dolor sit amet</a>
+                </h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed ante tempus, blandit nisi et, dictum felis. Praesent ut ex volutpat, vulputate</p>
+                <a href="#" class="smooth see-more" title="">Đọc tiếp</a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12 shop shop-v2">
+            <a href="#" class="smooth c-img hv-scale" title="">
+                <img src="./assets/images/img-post.jpg" alt="" class="img-responsive">
+            </a>
+            <div class="ct ct-v2">
+                <h4>
+                    <a href="#" class="smooth" title="">Lorem ipsum dolor sit amet</a>
+                </h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed ante tempus, blandit nisi et, dictum felis. Praesent ut ex volutpat, vulputate</p>
+                <a href="#" class="smooth see-more" title="">Đọc tiếp</a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12 shop shop-v2">
+            <a href="#" class="smooth c-img hv-scale" title="">
+                <img src="./assets/images/img-post.jpg" alt="" class="img-responsive">
+            </a>
+            <div class="ct ct-v2">
+                <h4>
+                    <a href="#" class="smooth" title="">Lorem ipsum dolor sit amet</a>
+                </h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed ante tempus, blandit nisi et, dictum felis. Praesent ut ex volutpat, vulputate</p>
+                <a href="#" class="smooth see-more" title="">Đọc tiếp</a>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="#" class="smooth" title="">Xem toàn bộ
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>
